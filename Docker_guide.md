@@ -1,10 +1,15 @@
+***Build new image from docker file.***\
+$docker build -t image:ver -f Dockerfile .
 
-***Build new image from docker file.***
+***Start a container from image using docker file.***\
+$docker run --mount source=local_volume_name,target=/vol1 -rm -it image:version bash
 
 
 
 
-**Create docker local volume:**
+
+
+***Create docker local volume:***\
 $docker volume create my-vol\
 $docker volume ls\
 $docker volume inspect my-vol\
