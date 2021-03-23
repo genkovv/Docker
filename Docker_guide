@@ -1,2 +1,5 @@
+<b>Create docker local volume: </b>
 
-test
+$docker volume create my-vol
+$docker volume ls
+$docker volume inspect my-vol
